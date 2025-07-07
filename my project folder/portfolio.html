@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samuel Lartey - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      overflow-x: hidden;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    .logo {
+      font-weight: bold;
+      font-size: 1.4rem;
+      color: #2c3e50;
+    }
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+    .nav-links li {
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: #34495e;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover {
+      color: #2980b9;
+    }
+    .portfolio-header {
+      text-align: center;
+      padding: 60px 20px;
+      background: #2980b9;
+      color: white;
+    }
+    .portfolio-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .slider {
+      position: relative;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    .slides {
+      display: flex;
+      width: 400%;
+      animation: slide 16s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      20% { transform: translateX(0%); }
+      25% { transform: translateX(-100%); }
+      45% { transform: translateX(-100%); }
+      50% { transform: translateX(-200%); }
+      70% { transform: translateX(-200%); }
+      75% { transform: translateX(-300%); }
+      95% { transform: translateX(-300%); }
+      100% { transform: translateX(0%); }
+    }
+    .project-list {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.8s forwards;
+    }
+    .project-card:nth-child(1) { animation-delay: 0.2s; }
+    .project-card:nth-child(2) { animation-delay: 0.4s; }
+    .project-card:nth-child(3) { animation-delay: 0.6s; }
+    .project-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .project-card h3 {
+      padding: 15px;
+      font-size: 1.2rem;
+      color: #2c3e50;
+    }
+    .project-card p {
+      padding: 0 15px 15px;
+      color: #555;
+      font-size: 0.95rem;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer {
+      text-align: center;
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">SAMUEL</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="portfolio-header">
+    <h2>My Portfolio</h2>
+    <p>A showcase of my latest work and projects.</p>
+  </section>
+
+  <section class="slider">
+    <div class="slides">
+      <img src="https://via.placeholder.com/800x400/6dd5fa/ffffff?text=Project+1" alt="Project 1">
+      <img src="https://via.placeholder.com/800x400/2980b9/ffffff?text=Project+2" alt="Project 2">
+      <img src="https://via.placeholder.com/800x400/8e44ad/ffffff?text=Project+3" alt="Project 3">
+      <img src="https://via.placeholder.com/800x400/16a085/ffffff?text=Project+4" alt="Project 4">
+    </div>
+  </section>
+
+  <section class="project-list">
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Project A">
+      <h3>Landing Page Design</h3>
+      <p>A modern landing page built with HTML, CSS, and animations.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Project B">
+      <h3>E-commerce Website</h3>
+      <p>Responsive online store design with a clean, user-friendly layout.</p>
+    </div>
+    <div class="project-card">
+      <img src="https://via.placeholder.com/400x200" alt="Project C">
+      <h3>Portfolio Website</h3>
+      <p>Personal portfolio with interactive sections and smooth scrolling.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Samuel Lartey</p>
+  </footer>
+
+</body>
+</html>

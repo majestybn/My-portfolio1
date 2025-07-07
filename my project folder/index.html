@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Samuel Lartey - Hero Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">SAMUEL</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contactUs.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <!-- Animated SVG Background -->
+    <div class="blob-bg">
+      <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="blobGradient" gradientTransform="rotate(90)">
+            <stop offset="0%" stop-color="#6dd5fa" />
+            <stop offset="100%" stop-color="#2980b9" />
+          </linearGradient>
+        </defs>
+        <path id="blob" fill="url(#blobGradient)">
+          <animate attributeName="d" dur="12s" repeatCount="indefinite"
+            values="
+              M421,362Q381,474,273,457Q165,440,118,338Q71,236,157,170Q243,104,335,146Q427,188,432,289Q437,390,421,362Z;
+              M436,360Q394,470,284,471Q174,472,120,365Q66,258,139,181Q212,104,320,108Q428,112,449,213Q470,314,436,360Z;
+              M421,377Q378,444,280,454Q182,464,118,365Q54,266,148,176Q242,86,354,126Q466,166,459,275Q452,384,421,377Z;
+              M421,362Q381,474,273,457Q165,440,118,338Q71,236,157,170Q243,104,335,146Q427,188,432,289Q437,390,421,362Z
+            "
+          />
+        </path>
+      </svg>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+      <div class="text-box">
+        <p class="sub">HEY THERE !</p>
+        <h1>I AM SAMUEL LARTEY</h1>
+        <p class="role">Web Developer & Designer</p>
+        <div class="social">
+          <a href="#">FB</a>
+          <a href="#">TW</a>
+          <a href="#">LI</a>
+          <a href="#">GH</a>
+        </div>
+        <a href="#" class="btn">SEE MY WORK</a>
+      </div>
+      <div class="image-box">
+        <img src="images/20210111_133636_IMG_0991-removebg-preview.png" alt="Samuel Lartey" />
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
